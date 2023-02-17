@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in Page</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <section class="wrapper">
+    <div class="wrapper container">
+      <!-- Left Block -->
+      <div class="left-block">
+        <div class="left-block data">
+          <div class="header">
+            <h1 id="welcome-header">Welcome back.</h1>
+            <p id="welcome-paragraph">Welcome back! Please enter your details.</p>
+          </div>
+          <form class="form" action="">
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Enter your email">
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter your password">
+          </form>
+          <div class="remember">
+            <input type="checkbox" name="remember">
+            <p>Remember me</p>
+            <a href="#">Forgot the password.</a>
+          </div>
+          <div class="buttons">
+            <button id="button-simple" type="submit">Sign in</button>
+            <button id="button-google" type="submit"><img src="images/google.png" alt="google"></i>Sign in with
+              Google</button>
+          </div>
+        </div>
+      </div>
+      <!-- Right Block -->
+      <div class="right-block">
+        <div class="right-block data">
+          <h1 id="header-block">Don't have an account?</h1>
+          <img id="image-block" src="images/signup.png" alt="signup">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

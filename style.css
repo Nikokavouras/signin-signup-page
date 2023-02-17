@@ -1,0 +1,224 @@
+/* https://fonts.google.com/specimen/Lato?query=Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(97, 62, 186, 1) 100%);
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	margin: auto;
+	width: 75em;
+	margin-top: 3em;
+	padding: 0.2em;
+	height: 43em;
+	background-color: whitesmoke;
+	border-radius: 0.3em;
+}
+
+.wrapper .container {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	padding: 0.2em;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Left block */
+.wrapper .container .left-block {
+	width: 50%;
+	height: 100%;
+	left: 0;
+	transition: transform 1s ease-out;
+}
+
+.wrapper .container .left-block .data {
+	width: 60%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.wrapper .container .left-block .data .header {
+	text-align: left;
+}
+
+.wrapper .container .left-block .data .header p {
+	margin-top: 0.5em;
+	font-size: 0.9em;
+}
+
+.wrapper .container .left-block .form {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2em;
+}
+
+.wrapper .container .left-block .form label {
+	font-size: 0.9em;
+}
+
+.wrapper .container .left-block .form label:not(:first-child) {
+	margin-top: 1em;
+}
+
+.wrapper .container .left-block .form input {
+	padding: 1em;
+	border-radius: 0.5em;
+	border: 0.1em solid rgba(0, 0, 0, 0.226);
+	outline: none;
+	margin-top: 0.3em;
+}
+
+.wrapper .container .left-block .data .remember {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.9em;
+	margin-top: 1.5em;
+}
+
+.wrapper .container .left-block .data .remember p {
+	margin-right: 7em;
+}
+
+.wrapper .container .left-block .data .remember a {
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.wrapper .container .left-block .data .buttons {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2em;
+}
+
+.wrapper .container .left-block .data .buttons button {
+	cursor: pointer;
+	padding: 1em;
+	font-size: 0.9em;
+	border-radius: 0.5em;
+}
+
+.wrapper .container .left-block .data .buttons button:nth-child(1) {
+	color: white;
+	background-color: #613ebae7;
+	border: none;
+}
+
+.wrapper .container .left-block .data .buttons button:nth-child(2) {
+	margin-top: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	background-color: whitesmoke;
+	border: 0.1em solid rgba(0, 0, 0, 0.226);
+}
+
+.wrapper .container .left-block .data .buttons button:last-child img {
+	width: 1.5em;
+	margin-right: 0.5em;
+}
+
+.wrapper .container .left-block .data .change-signup {
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+	font-size: 0.9em;
+}
+
+.wrapper .container .left-block .data .change-signup a {
+	margin-left: 1em;
+}
+
+/* Right Block */
+.wrapper .container .right-block {
+	width: 50%;
+	height: 100%;
+	transition: transform 1s ease-out;
+	background-color: #6f4fbf;
+	border-radius: 0.3em;
+
+}
+
+.wrapper .container .right-block .data {
+	width: 60%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.wrapper .container .right-block .data h1 {
+	text-align: center;
+	color: whitesmoke;
+}
+
+.wrapper .container .right-block .data img {
+	display: block;
+	width: 7em;
+	margin: 0 auto;
+	margin-top: 2em;
+	cursor: pointer;
+
+	transition: opacity 1s;
+}
+
+.wrapper .container .right-block .data img.hidden {
+	opacity: 0;
+}
+
+
+/* Move transition */
+.left-block.move {
+	transform: translateX(100%);
+}
+
+.right-block.move {
+	transform: translateX(-100%);
+}
+
+
+/* Media Queries */
+@media(max-width: 1224px) {
+	.wrapper {
+		width: 100%;
+	}
+
+	.wrapper .container {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.wrapper .container .left-block {
+		width: 37em;
+		margin: auto;
+	}
+
+	.wrapper .container .right-block {
+		display: none;
+	}
+}
+
+@media(max-width: 600px) {
+	.wrapper .container .left-block {
+		width: 100%;
+	}
+
+	.wrapper .container .left-block .data {
+		width: 90%;
+	}
+}
